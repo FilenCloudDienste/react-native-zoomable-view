@@ -1,0 +1,67 @@
+{
+  "name": "@dudigital/react-native-zoomable-view",
+  "version": "1.1.3",
+  "description": "A view component for react-native with pinch to zoom, tap to move and double tap to zoom capability.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w",
+    "transpile": "rollup -c -w",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuDigital/react-native-zoomable-view.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "ios",
+    "android",
+    "pinch-to-zoom",
+    "pinch",
+    "mobile",
+    "native",
+    "component",
+    "view",
+    "zoom",
+    "zoomable",
+    "double",
+    "tap"
+  ],
+  "author": "Simon Auer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DuDigital/react-native-zoomable-view/issues"
+  },
+  "homepage": "https://github.com/DuDigital/react-native-zoomable-view#readme",
+  "types": "typings/index.d.ts",
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react-native": ">=0.54.0"
+  },
+  "devDependencies": {
+    "@types/react": ">=16.8.0",
+    "@types/react-native": "^0.64.10",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-runtime": "^6.26.0",
+    "prettier": "^2.3.1",
+    "rollup": "^2.51.1",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.3.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.54.0"
+  }
+}
